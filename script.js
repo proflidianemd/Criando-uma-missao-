@@ -6,38 +6,79 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Você prefere:",
+        alternativas:[
+{
+texto: "Silêncio e tranquilidade"
+afirmacao: "afirmação"
+},
+{
+texto:"Movimento e agito"
+afirmacao: "afirmação"
+        }
+    ]
+    },
+    {
+        enunciado: "Para decidir alguma questão, você é mais:",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            {
+            texto:"Racional"
+            afirmacao: "afirmação"
+        },
+        {
+            texto: "Emocional"
+            afirmacao:"afirmação"
+        }
+          
         ]
     },
     {
-        enunciado: "Pergunta 2",
+        enunciado: "Você se sente melhor em:",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            {
+                texto:"Lugares com muita gente"
+                afirmacao:"afirmação"
+            },
+            {
+                texto:"Lugares mais reservados"
+                afirmacao: "afirmação"
+            }
+             ]
+    },
+
+    {
+        enunciado: "Em seu tempo livre você prefere:",
+        alternativas: [
+            {
+                texto:"Ler ou ver um filme"
+                afirmacao: "afirmação"
+            },
+{
+    texto: "Sair ou fazer algo novo"
+    afirmacao:"afirmação"
+}
         ]
     },
     {
-        enunciado: "Pergunta 3",
+        enunciado: "Você se considera mais:",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
-        ]
-    },
-    {
-        enunciado: "Pergunta 4",
-        alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
-        ]
-    },
-    {
-        enunciado: "Pergunta 5",
-        alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
-        ]
+            {texto:"Planejado"
+                afirmacao: "afirmação"
+            },
+            {texto:"Espontâneo"
+                afirmacao: "afirmação"
+            }
+                   ]
     }
+    
 ];
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta(){
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+
+mostraPergunta();
