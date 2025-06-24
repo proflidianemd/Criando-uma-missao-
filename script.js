@@ -18,6 +18,7 @@ afirmacao: "afirmação"
         }
     ]
     },
+
     {
         enunciado: "Para decidir alguma questão, você é mais:",
         alternativas: [
@@ -69,7 +70,7 @@ afirmacao: "afirmação"
                 afirmacao: "afirmação"
             }
                    ]
-    }
+    },
     
 ];
 
