@@ -1,8 +1,8 @@
 const caixaPrincipal = document.querySelector(".caixa-principal"); 
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
-const caixaResultado = document.querySelector(".caixa-resultado");
-const textoResultado = document.querySelector(".texto-resultado");
+const caixaResultado = document.querySelector(".caixa-resultados");
+const textoResultado = document.querySelector(".texto-resultados");
 
 const perguntas = [
     {
@@ -92,7 +92,7 @@ function mostraAlternativa() {
     for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", () => rspostaSelecionada(alternativa));
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
