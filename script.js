@@ -82,4 +82,10 @@ function mostraPergunta(){
     caixaPerguntas.textContent = perguntaAtual.enunciado;
 }
 
-mostraPergunta();
+funtion mostraAlternativa();{
+    for(constant alternativa of perguntaAtual.alternativas){
+        const botaoAlternativa = document.createElement("button");
+    }
+    }
+
+    mostraPergunta();
