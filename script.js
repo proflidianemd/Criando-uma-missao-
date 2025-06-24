@@ -23,11 +23,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Racional",
-                afirmacao: "afirmação"
+                afirmacao: "Você costuma analisar antes de agir, com foco e lógica"
             },
             {
                 texto: "Emocional",
-                afirmacao: "afirmação"
+                afirmacao: "Você segue o coração e valoriza o que sente nas decisões"
             }
         ]
     },
@@ -36,11 +36,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Lugares com muita gente",
-                afirmacao: "afirmação"
+                afirmacao: "Você gosta de socializar e estar rodeado(a) de pessoas"
             },
             {
                 texto: "Lugares mais reservados",
-                afirmacao: "afirmação"
+                afirmacao: "Você prefere ambientes tranquilos e momentos mais reservados"
             }
         ]
     },
@@ -49,11 +49,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Ler ou ver um filme",
-                afirmacao: "afirmação"
+                afirmacao: "Você aprecia atividades calmas e momentos de reflexão"
             },
             {
                 texto: "Sair ou fazer algo novo",
-                afirmacao: "afirmação"
+                afirmacao: "Você adora explorar, sair e viver novas experiências"
             }
         ]
     },
@@ -62,11 +62,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Planejado",
-                afirmacao: "afirmação"
+                afirmacao: "Você gosta de organizar e planejar cada detalhe"
             },
             {
                 texto: "Espontâneo",
-                afirmacao: "afirmação"
+                afirmacao: "Você se joga nas oportunidades e vive o momento"
             }
         ]
     },
