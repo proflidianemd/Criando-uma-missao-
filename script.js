@@ -10,11 +10,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Silêncio e tranquilidade",
-                afirmacao: "afirmação"
+                afirmacao: "Você valoriza momentos de paz."
             },
             {
                 texto: "Movimento e agito",
-                afirmacao: "afirmação"
+                afirmacao: "Você adora estar em movimento"
             }
         ]
     },
