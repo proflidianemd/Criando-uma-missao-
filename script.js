@@ -7,92 +7,91 @@ const textoResultado = document.querySelector(".texto-resultado");
 const perguntas = [
     {
         enunciado: "Você prefere:",
-        alternativas:[
-{
-texto: "Silêncio e tranquilidade",
-afirmacao: "afirmação"
-},
-{
-texto:"Movimento e agito",
-afirmacao: "afirmação"
-        }
-    ]
+        alternativas: [
+            {
+                texto: "Silêncio e tranquilidade",
+                afirmacao: "afirmação"
+            },
+            {
+                texto: "Movimento e agito",
+                afirmacao: "afirmação"
+            }
+        ]
     },
-
     {
         enunciado: "Para decidir alguma questão, você é mais:",
         alternativas: [
             {
-            texto:"Racional",
-            afirmacao: "afirmação"
-        },
-        {
-            texto: "Emocional",
-            afirmacao:"afirmação"
-        }
-          
+                texto: "Racional",
+                afirmacao: "afirmação"
+            },
+            {
+                texto: "Emocional",
+                afirmacao: "afirmação"
+            }
         ]
     },
     {
         enunciado: "Você se sente melhor em:",
         alternativas: [
             {
-                texto:"Lugares com muita gente",
-                afirmacao:"afirmação"
+                texto: "Lugares com muita gente",
+                afirmacao: "afirmação"
             },
             {
-                texto:"Lugares mais reservados",
+                texto: "Lugares mais reservados",
                 afirmacao: "afirmação"
             }
-             ]
+        ]
     },
-
     {
         enunciado: "Em seu tempo livre você prefere:",
         alternativas: [
             {
-                texto:"Ler ou ver um filme",
+                texto: "Ler ou ver um filme",
                 afirmacao: "afirmação"
             },
-{
-    texto: "Sair ou fazer algo novo",
-    afirmacao:"afirmação"
-}
+            {
+                texto: "Sair ou fazer algo novo",
+                afirmacao: "afirmação"
+            }
         ]
     },
     {
         enunciado: "Você se considera mais:",
         alternativas: [
-            {texto:"Planejado",
+            {
+                texto: "Planejado",
                 afirmacao: "afirmação"
             },
-            {texto:"Espontâneo",
+            {
+                texto: "Espontâneo",
                 afirmacao: "afirmação"
             }
-                   ]
+        ]
     },
-    
 ];
 
 let atual = 0;
 let perguntaAtual;
 
-function mostraPergunta(){
+function mostraPergunta() {
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     mostraAlternativa();
 }
 
-function mostraAlternativa();{
-    for(const alternativa of perguntaAtual.alternativas){
+function mostraAlternativa() {
+    caixaAlternativas.innerHTML = ''; // Limpa as alternativas anteriores
+    for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativa = document.createElement("button");
         botaoAlternativa.textContent = alternativa.texto;
-        botaoAlternativa.addEventListener("click", function(){
+        botaoAlternativa.addEventListener("click", function() {
             atual++;
             mostraPergunta();
         });
         caixaAlternativas.appendChild(botaoAlternativa);
     }
-    }
+}
 
-    mostraPergunta();
+mostraPergunta();
